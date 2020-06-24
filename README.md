@@ -13,7 +13,7 @@ composer require fanqingxuan/container
 ```
 ### demo
 看下面的例子
-```
+```php
 require_once './vendor/autoload.php';
 
 use JsonContainer\Container;
