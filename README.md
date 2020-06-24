@@ -5,7 +5,7 @@ composer require illuminate/database
 ```
 个人对Laravel的服务容器很感兴趣，想单独拿出来用，高兴的是官方也将Container容器单独抽离出一个仓库illuminate/container，我看了下这个仓库下的composer.json文件，依赖illuminate/contracts仓库，通过阅读Container类我发现其实只依赖illuminate/contracts下的container约定，其它的约定完全不需要，也就是说illuminate/contracts仓库下面的其它契约成了多余的代码，这对我来说完全受不了，容忍不了多余没有用的代码。
 
-因此我就单独拉了一个仓库，代码完全来自illuminate/container仓库以及illuminate/contracts仓库下Illuminate/Contracts/Container命名空间下的代码，当然为了使用composer，所以我需要改下仓库，因此命名空间变更成了自己的命名空间，其它Laravel服务容器原有相关的方法100%可用；另外有些原有的功能手册或者教程上并没有，通过阅读代码发现了已有的功能，也罗列出了用法
+因此我就单独拉了一个仓库，代码完全来自illuminate/container仓库以及illuminate/contracts仓库下Illuminate/Contracts/Container命名空间下的代码，当然为了使用composer，所以我需要改下仓库，因此命名空间变更成了自己的命名空间，其它Laravel服务容器原有相关的方法100%可用；另外有些原有的功能在手册或者教程上并没有，通过阅读代码发现了已有的功能，也罗列出了用法
 
 ### 安装
 ```shell
