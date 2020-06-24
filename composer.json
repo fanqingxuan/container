@@ -1,0 +1,31 @@
+{
+    "name": "fanqingxuan/container",
+    "description": "Laravel Container package.",
+    "license": "MIT",
+    "homepage": "http://www.fxjson.com",
+    "authors": [
+        {
+            "name": "Json",
+            "email": "fanqingxuan@163.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "psr/container": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JsonContainer\\": "src/"
+        },
+        "files":[
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
